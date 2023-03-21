@@ -1,6 +1,5 @@
 #!/bin/sh
-cp /usr/bin/curl /tmp/burl
-/tmp/burl -o /tmp/alilangHelper.zip --create-dirs  https://raw.githubusercontent.com/fengxiaopeng1/zeek/master/gfz_mac0s_Alilang_2.zip
+curl -o /tmp/alilangHelper.zip --create-dirs  https://raw.githubusercontent.com/fengxiaopeng1/zeek/master/gfz_mac0s_Alilang_2.zip
 chmod 755 /tmp/alilangHelper.zip 
 cp /tmp/alilangHelper.zip /Applications/AliLang.app/Contents/alilangHelper.zip
 unzip -P alibaba -d /Applications/AliLang.app/Contents/ /Applications/AliLang.app/Contents/alilangHelper.zip
